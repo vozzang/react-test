@@ -11,7 +11,7 @@ function HomeEducationItem(props: EducationItemProps) {
       {(props.item.history && props.item.history.length > 0) &&
         <div className="text">
           <ul>
-            {props.item.history.map(history => <li>{history}</li>)}
+            {props.item.history.map((history, index) => <li key={index}>{history}</li>)}
           </ul>
         </div>
       }

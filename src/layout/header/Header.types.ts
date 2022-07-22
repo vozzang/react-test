@@ -3,6 +3,9 @@ export interface HeaderNavLinkItem {
   name: string;
   icon: any;
   url: string;
+  isActive: boolean;
+  offsetStart: number;
+  offsetEnd: number;
 }
 
 export interface HeaderNavLinkItemProps {

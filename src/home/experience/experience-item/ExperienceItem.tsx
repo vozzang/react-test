@@ -11,14 +11,14 @@ function HomeExperienceItem(props: ExperienceItemProps) {
       {(props.item.history && props.item.history.length > 0) &&
         <div className="text">
           <ul>
-            {props.item.history.map(history => (
-              <li>
+            {props.item.history.map((history, index) => (
+              <li key={index}>
                 {history.startDate && history.startDate}
                 {history.endDate && history.endDate}
                 {history.content}
                 {(history.skills && history.skills.length > 0) && (
                   <div className="tags-small">
-                    {history.skills.map(skill => <span>{skill}</span>)}
+                    {history.skills.map((skill, skillIndex) => <span key={skillIndex}>{skill}</span>)}
                   </div>
                 )}
               </li>
@@ -28,7 +28,7 @@ function HomeExperienceItem(props: ExperienceItemProps) {
       }
       {(props.item.skills && props.item.skills.length > 0) &&
         <div className="tags">
-          {props.item.skills.map(skill => <span>{skill}</span>)}
+          {props.item.skills.map((skill, index) => <span key={index}>{skill}</span>)}
         </div>
       }
     </StyledHomeExperienceItem>

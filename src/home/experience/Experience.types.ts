@@ -3,15 +3,19 @@ export interface ExperienceItemHistory {
   startDate?: string;
   endDate?: string;
   skills?: string[];
+  description?: string;
+  url?: string;
 }
 
 export interface ExperienceItem {
   startDate: string;
-  endDate?: string;
   company: string;
   job: string;
-  skills: string[],
-  history: ExperienceItemHistory[]
+  skills: string[];
+  history: ExperienceItemHistory[];
+  endDate?: string;
+  description?: string;
+  url?: string;
 }
 
 export interface ExperienceItemProps {

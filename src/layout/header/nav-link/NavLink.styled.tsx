@@ -15,9 +15,9 @@ export const StyledNavLink = styled.a`
     width: 30px;
   }
   &:hover {
-    color: $warning;
+    color: #ffd15c;
   }
   &.active {
-    color: $warning;
+    color: #ffd15c;
   }
 `;

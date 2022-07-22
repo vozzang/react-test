@@ -4,7 +4,7 @@ import IconBackend from '../../shared/svg/icon-back-end.svg';
 
 function HomeCompetencies() {
   return (
-    <StyledHomeCompetencies>
+    <StyledHomeCompetencies id="competencies">
       <div className="container">
         <h2 className="section-title">Core competencies</h2>
         <div className="competencies-content">

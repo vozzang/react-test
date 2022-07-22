@@ -10,6 +10,11 @@ function HomeCertify() {
       url: 'https://www.hackerrank.com/certificates/2b1dfa17d24a'
     },
     {
+      title: 'React',
+      grade: 'Basic',
+      url: 'https://www.hackerrank.com/certificates/a97dd0d2e881'
+    },
+    {
       title: 'Javascript',
       grade: 'Basic',
       url: 'https://www.hackerrank.com/certificates/be0b2fbc6d1f'
@@ -34,7 +39,7 @@ function HomeCertify() {
       <div className="container">
         <h2 className="section-title">HackerRank Certify</h2>
         <div className="items">
-          {certifyItems.map(item => <HomeCertifyItem item={item} />)}
+          {certifyItems.map((item, index) => <HomeCertifyItem key={index} item={item} />)}
         </div>
       </div>
     </StyledHomeCertify>
